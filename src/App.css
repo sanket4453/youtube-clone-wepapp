@@ -13,3 +13,14 @@
 .videodetails{
     margin-left: 30px;
 }
+.searchbtn{
+    background-color: rgb(230, 70, 70);
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    width: 10%;
+}
+.searchform{
+    display: flex;
+
+}
