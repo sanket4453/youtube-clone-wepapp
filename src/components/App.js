@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'
 import youtube from '../api/youtube'
 import VideoDetails from './VideoDetails'
 import SearchBar from './SearchBar'
@@ -31,13 +32,13 @@ class App extends React.Component{
     render(){
         // const {selectedVideo} = this.state;
         return(
-            <Grid justify="center container" container spacing={5}>
+            <Grid justify="center container" container spacing={5} >
                 <Grid item xs={12}>
                     <Grid container spacing={10}>
                         <Grid item xs={12}>
                            <SearchBar onFormSubmit={this.handleSubmit} />
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid item xs={8}  className="videodetails" style={{}}>
                            <VideoDetails video={this.state.selectedVideo}/>
                         </Grid>
                         <Grid item xs={4}>

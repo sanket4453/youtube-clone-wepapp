@@ -9,7 +9,7 @@ function VideoList(props) {
          video={video}/>
     })
     return (
-        <ul className="col-md-8 list-group">
+        <ul className="col-md-8 m-1 list-group">
             {VideoItem}
         </ul>
     )

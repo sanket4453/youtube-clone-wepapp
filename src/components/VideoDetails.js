@@ -9,24 +9,16 @@ const VideoDetails = ({video}) => {
     // console.log(videos[0]);
     // console.log('hello')
     const videoId = video.id.videoId;
-    const url = 'https://www.youtube.com/embed/' + videoId;
+    const url = `https://www.youtube.com/embed/${videoId}`;
    // const VidSrc=`https://www.youtube.com/embed/${videos[0].id.videoId}`;
 
     return(
-        // <div className="video-detail col-md-8">
-        //     <div className="embed-responsive embed-responsive-16by9">
-        //         <iframe className="embed-responsive-item" src={url}></iframe>
-        //     </div>
-        //     <div className="details">
-        //         <div>{video.snippet.title}</div>
-        //         <div>{video.snippet.description}</div>
-        //     </div>
-        // </div>
+       
         <React.Fragment>
-            <Paper elevation={6} style={{height:'70%'}}>
-                <iframe frameBorder="0" height='100%' width='100%' title="Video Player" src={url}   />
+            <Paper elevation={6} style={{height:'70%', marginLeft:'40px'}}>
+                <iframe frameBorder="0" height='90%' style={{}} width='100%' title="Video Player" src={url}   />
             </Paper>
-            <Paper elevation={6} style={{padding:'15'}}>
+            <Paper elevation={6} style={{padding:'15', marginLeft:'40px'}}>
                 <Typography variant="h4" >
                     {video.snippet.title} - {video.snippet.channelTitle}
                      </Typography>

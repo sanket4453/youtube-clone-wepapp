@@ -3,7 +3,7 @@ import {Paper, TextField} from '@material-ui/core';
 
 class SearchBar extends React.Component{
 
-    state = { searchTerm :''}
+    state = { searchTerm :'dogs'}
 
     handleChange = (e) =>{
         this.setState({searchTerm: e.target.value});
